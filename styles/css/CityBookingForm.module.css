@@ -1,0 +1,11 @@
+.bookingDuration {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10rem 10rem 5rem;
+      grid-template-columns: 10rem 10rem 5rem;
+}
+
+.bookingDuration .radio {
+  margin-left: 0 !important;
+}
+/*# sourceMappingURL=CityBookingForm.module.css.map */

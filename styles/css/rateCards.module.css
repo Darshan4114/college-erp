@@ -1,0 +1,90 @@
+.container {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  -ms-grid-rows: auto 25rem;
+      grid-template-rows: auto 25rem;
+  padding: 0 0 3em;
+  background: #dbf0ff;
+  overflow: hidden;
+}
+
+.container .bookingTypeList {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.container .map {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: unset;
+        grid-template-rows: unset;
+    padding: 0;
+  }
+  .container .map {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .container .bookingTypeList {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 1em;
+  }
+}
+
+.packageTable {
+  width: 30rem;
+  margin: 2em auto;
+  padding: 0 0 2em;
+  max-width: calc(100vw - 1rem);
+}
+
+.packageTable th,
+.packageTable td {
+  border: 1px solid #dedede;
+}
+
+.packageTable th input,
+.packageTable td input {
+  width: 100%;
+  border: none;
+  font-size: 1.1rem;
+  padding: 0.2em;
+}
+
+.packageTable th {
+  word-wrap: break-word;
+}
+
+.packageTable .amount {
+  width: 5rem;
+}
+
+.packageTable .ratePerKm,
+.packageTable .ratePerHour {
+  width: 3rem;
+}
+
+.packageTable .groupHeading {
+  text-align: center;
+  background: var(--theme-primary);
+  color: white;
+  font-weight: 700;
+}
+
+.packageTable .tripType {
+  padding: 0.2em;
+  text-transform: capitalize;
+}
+/*# sourceMappingURL=rateCards.module.css.map */

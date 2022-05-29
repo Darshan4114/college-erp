@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;CAGZ",
+    "sources": [
+        "../scss/GMap.module.scss"
+    ],
+    "names": [],
+    "file": "GMap.module.css"
+}

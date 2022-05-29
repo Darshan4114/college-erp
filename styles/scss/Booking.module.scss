@@ -1,0 +1,23 @@
+.displayName {
+  font-weight: bold;
+  .firstBookingBool {
+    font-size: 0.8rem;
+    color: rgb(90, 211, 65);
+
+    &.firstBooking {
+      color: rgb(243, 255, 6);
+    }
+  }
+  .bookingType {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #777;
+  }
+}
+.iconBtn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  height: 30px;
+  width: 30px;
+}

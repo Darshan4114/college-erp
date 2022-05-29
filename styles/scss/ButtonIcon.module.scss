@@ -1,0 +1,11 @@
+.iconBtn {
+  background: none;
+  border: none;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  :disabled {
+    pointer-events: none;
+    background: #ff0000;
+  }
+}

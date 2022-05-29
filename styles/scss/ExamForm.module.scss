@@ -1,0 +1,42 @@
+.form {
+  width: 35rem;
+  max-width: calc(100vw - 2rem);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 1em;
+}
+.subjects {
+  display: flex;
+  flex-direction: column;
+  .subjectName {
+    margin: 0 1em;
+    // width: 5rem;
+  }
+  .subject {
+    align-items: center;
+    display: grid;
+    place-content: end;
+    padding-right: 0.4em;
+    grid-template-columns: 3rem 15rem 12.5rem;
+    gap: 1em;
+  }
+}
+.dateTime {
+  display: flex;
+  justify-content: flex-end;
+}
+.group {
+  position: relative;
+  margin: 0.25em;
+  padding: 0.9em 0 0;
+  // width: 10rem;
+
+  .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0.9rem;
+    color: #777;
+  }
+}

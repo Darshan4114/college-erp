@@ -1,0 +1,47 @@
+.container {
+  position: relative;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(2, 1fr);
+}
+.subjectList {
+  background: rgb(204, 226, 240);
+}
+.subjectTable {
+  padding: 1em;
+  width: 100%;
+  align-items: center;
+
+  th {
+    text-align: left;
+    border-bottom: 1px solid #777;
+    padding: 0 0 0.5em;
+    margin: 0 0 0.5em;
+  }
+  tr {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2rem 17rem 10rem 7rem 7rem 5rem 5rem;
+  }
+
+  .timetableIcon {
+    margin-left: 1.25em;
+  }
+} 
+
+.toolbar {
+  display: flex;
+  padding: 1em;
+  justify-content: space-between;
+}
+.addBtn {
+  background: none;
+  border: none;
+}
+.subjectDetail{
+  position:fixed;
+  top:0;
+  right:0;
+  width: 20rem;
+  margin: 1em;
+}

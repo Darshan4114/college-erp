@@ -1,0 +1,25 @@
+.packageTable {
+  width: calc(100vw - 1rem);
+  margin: 7rem auto 0;
+  max-width: 28rem;
+  th,
+  td {
+    border: 1px solid #dedede;
+    input {
+      width: 100%;
+      border: none;
+      font-size: 1.1rem;
+      padding: 0.2em;
+    }
+  }
+
+  th {
+    word-wrap: break-word;
+  }
+
+  .amount,
+  .ratePerKm,
+  .ratePerHour {
+    width: 2.5rem;
+  }
+}

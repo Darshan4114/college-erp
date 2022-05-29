@@ -1,0 +1,36 @@
+.container {
+  position: relative;
+  padding: 4em 1em 1em;
+  margin: 1em 0 1em 1em;
+  background: white;
+  border-radius: 1em;
+}
+
+.location {
+  cursor: pointer;
+  padding: 0.7em;
+  border-radius: 0.25em;
+}
+
+.location .name {
+  font-size: 1.1rem;
+}
+
+.location:hover {
+  background: #efefef;
+}
+
+.hr {
+  border-bottom: 1px solid #efefef;
+  height: 0;
+}
+
+.addBtn {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  cursor: pointer;
+}
+/*# sourceMappingURL=LocationList.module.css.map */

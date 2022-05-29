@@ -1,0 +1,51 @@
+.container {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.courseList {
+  background: #cce2f0;
+}
+
+.courseTable {
+  padding: 1em;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 2rem 17rem 10rem 5rem;
+      grid-template-columns: 2rem 17rem 10rem 5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.courseTable th {
+  text-align: left;
+  border-bottom: 1px solid #777;
+  padding: 0 0 0.5em;
+  margin: 0 0 0.5em;
+}
+
+.courseTable .timetableIcon {
+  margin-left: 1.25em;
+}
+
+.toolbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.addBtn {
+  background: none;
+  border: none;
+}
+/*# sourceMappingURL=courses.module copy.css.map */

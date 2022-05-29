@@ -1,0 +1,64 @@
+.form {
+  width: 35rem;
+  max-width: calc(100vw - 2rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.subjects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.subjects .subjectName {
+  margin: 0 1em;
+}
+
+.subjects .subject {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  place-content: end;
+  padding-right: 0.4em;
+  -ms-grid-columns: 3rem 15rem 12.5rem;
+      grid-template-columns: 3rem 15rem 12.5rem;
+  gap: 1em;
+}
+
+.dateTime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.group {
+  position: relative;
+  margin: 0.25em;
+  padding: 0.9em 0 0;
+}
+
+.group .label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.9rem;
+  color: #777;
+}
+/*# sourceMappingURL=ExamForm.module.css.map */

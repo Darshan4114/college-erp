@@ -1,0 +1,102 @@
+.container {
+  position: relative;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 17rem 13rem auto;
+  .hr {
+    width: calc(100% - 2rem);
+    margin: 1em;
+    border: 0;
+    height: 1px;
+    background: rgb(169, 169, 169);
+  }
+  overflow: hidden;
+}
+.examList {
+  background: rgb(243, 250, 255);
+  padding-top: 0.6em;
+}
+.examDetail {
+  overflow: auto;
+  overflow-x: hidden;
+  padding-bottom: 4em;
+  position:relative;
+}
+.courseList {
+  position: relative;
+
+  .courses {
+    margin: 1em 0 0;
+    .editBtn {
+      visibility: hidden;
+    }
+    > p:hover {
+      .editBtn {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.courses,
+.exams {
+  width: 100%;
+  position: relative;
+  > p {
+    padding: 1em;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+      background: rgb(175, 215, 240);
+    }
+  }
+  max-height: 90vh;
+  overflow: auto;
+}
+.addBtn {
+  background: var(--theme-primary);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  position: absolute;
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  right: 1em;
+  top: -0.1em;
+  cursor: pointer;
+}
+.editBtn {
+  color: #777;
+  position: absolute;
+  right: 0.5em;
+  bottom: 0.3em;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.sectionHeader {
+  color: #666;
+  text-transform: uppercase;
+  border-left: 2px solid var(--theme-primary);
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 0 0 0 0.25em;
+  margin: 0.5em;
+}
+
+.toolbar {
+  display: flex;
+  padding: 1em;
+  justify-content: space-between;
+}
+
+.examTable {
+  padding: 1em;
+  width: 100%;
+  align-items: center;
+  th {
+    text-align: left;
+    border-bottom: 1px solid #999;
+    padding: 0 0 0.25em;
+    margin: 0 0 0.25em;
+  }
+}

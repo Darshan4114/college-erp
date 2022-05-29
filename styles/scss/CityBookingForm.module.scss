@@ -1,0 +1,8 @@
+.bookingDuration {
+  display: grid;
+  grid-template-columns: 10rem 10rem 5rem;
+
+  .radio {
+    margin-left: 0 !important;
+  }
+}

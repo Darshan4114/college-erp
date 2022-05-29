@@ -1,0 +1,21 @@
+.container {
+  position: relative;
+  width: 12rem;
+
+  input {
+    border: 1px solid #cecece;
+    // background: var(--bg-default);
+    border-radius: 0.25em;
+    height: 2.2rem;
+    width: 100%;
+    font-size: 1.1rem;
+    // margin: 1em 0 1em 1em;
+    padding: 0 2rem 0 0.5em;
+  } 
+}
+
+.searchIcon {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+}

@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 10rem 7rem;
+      grid-template-columns: 10rem 7rem;
+  gap: 1em;
+}
+
+.container.full {
+  -ms-grid-columns: 17rem 7rem;
+      grid-template-columns: 17rem 7rem;
+}
+
+.time {
+  height: 3.9rem !important;
+}
+/*# sourceMappingURL=DateTimeInput.module.css.map */

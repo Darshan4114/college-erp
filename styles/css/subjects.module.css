@@ -1,0 +1,65 @@
+.container {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.subjectList {
+  background: #cce2f0;
+}
+
+.subjectTable {
+  padding: 1em;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subjectTable th {
+  text-align: left;
+  border-bottom: 1px solid #777;
+  padding: 0 0 0.5em;
+  margin: 0 0 0.5em;
+}
+
+.subjectTable tr {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 2rem 17rem 10rem 7rem 7rem 5rem 5rem;
+      grid-template-columns: 2rem 17rem 10rem 7rem 7rem 5rem 5rem;
+}
+
+.subjectTable .timetableIcon {
+  margin-left: 1.25em;
+}
+
+.toolbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.addBtn {
+  background: none;
+  border: none;
+}
+
+.subjectDetail {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 20rem;
+  margin: 1em;
+}
+/*# sourceMappingURL=subjects.module.css.map */

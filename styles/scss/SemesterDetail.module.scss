@@ -1,0 +1,134 @@
+.container {
+  padding: 1em;
+  section {
+    margin: 0 0 1.5em;
+  }
+}
+
+.examData {
+  display: grid;
+  margin-left: 1em;
+  grid-template-columns: repeat(3, 1fr);
+  width: calc(100% - 3rem);
+  align-items: center;
+}
+.subjects {
+  .chips {
+    margin-left: 1em;
+  }
+}
+.group {
+  position: relative;
+  margin: 0.25em;
+  padding: 0.9em 0 0;
+  width: 10rem;
+
+  .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0.9rem;
+    color: #777;
+  }
+}
+.noSubjectChip {
+  margin-left: 1em;
+}
+
+.timetable {
+  position: relative;
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 1em;
+  .subject {
+    display: grid;
+    align-items: center;
+    gap: 0.7em;
+    grid-template-columns: 3rem 15rem 9rem 2rem 2rem 2rem 2rem;
+    width: 100%;
+  }
+}
+.timeTableHeading {
+  display: grid;
+  gap: 0.7em;
+  grid-template-columns: 3rem 15rem 9rem 2rem 2rem 2rem 2rem;
+  width: 100%;
+  padding: 0 0 0.7em;
+  margin: 0 0 0.5em;
+  border-bottom: 1px solid #ddd;
+}
+.editBtn {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+.editTimetableBtn {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+}
+.deleteBtn {
+  position: absolute;
+  top: 3.5em;
+  right: 1em;
+}
+.hallTicketList {
+  margin: 1em;
+  padding: 1em;
+  // border: 1px solid #ddd;
+  border-radius: 1em;
+  .hallTicket {
+    display: grid;
+    gap: 0.7em;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+}
+.downloadHallTicketBtn {
+  border: none;
+  background: none;
+  color: #777;
+  padding: 0.2em 0.5em;
+  cursor: pointer;
+  border-radius: 0.25em;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.elective {
+  color: #00a6ff;
+  font-weight: bold;
+}
+.sectionHeader {
+  color: #777;
+  text-transform: uppercase;
+  border-left: 2px solid var(--theme-primary);
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0 0 0 0.25em;
+  margin: 1em 0.5em 0.2em 1em;
+}
+
+.actions {
+  margin: 1em 0 0;
+}
+.actionBtnGrp {
+  display: flex;
+  margin-left: 1em;
+}
+.actionBtn {
+  border: none;
+  background: none;
+  color: #777;
+  padding: 0.2em 0.5em;
+  cursor: pointer;
+  border-radius: 0.25em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
+}

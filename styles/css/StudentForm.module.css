@@ -1,0 +1,90 @@
+.modalContainer {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 100;
+}
+
+.form {
+  max-height: calc(100vh - 210px);
+  max-width: calc(100vw - 2rem);
+  overflow-y: auto;
+  width: 40rem;
+  position: relative;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 0.5em;
+  padding: 1em;
+  text-align: center;
+  margin: 3em auto;
+}
+
+.col2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
+
+.actionBtnGrp {
+  background: var(--theme-white);
+  margin-top: 1em;
+  width: 100%;
+  float: right;
+  border-radius: 0 0 0.5em 0.5em;
+  -webkit-clip-path: inset(-15px 0px 0px 0px);
+          clip-path: inset(-15px 0px 0px 0px);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.actionBtnGrp > button {
+  padding: 0.5em 0;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 0.25em;
+  cursor: pointer;
+  width: 9rem;
+}
+
+.actionBtnGrp .submit {
+  background: var(--theme-primary);
+  color: var(--theme-white);
+}
+
+.actionBtnGrp .cancel {
+  background: var(--theme-white);
+  color: var(--text-primary);
+  border: 2px solid var(--theme-primary);
+}
+
+.actionBtnGrp.reverseFlex .cancel {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.pfp {
+  margin: 1em auto;
+  width: 10rem;
+}
+
+.defaultUser {
+  position: relative;
+  height: 10rem;
+  width: 10rem;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=StudentForm.module.css.map */

@@ -1,0 +1,126 @@
+.container {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.userList {
+  background: #cce2f0;
+}
+
+.userTable {
+  width: 100%;
+}
+
+.userTable th {
+  text-align: left;
+  border-bottom: 1px solid #777;
+  padding: 0 0 0.5em;
+  margin: 0 0 0.5em;
+}
+
+.userTable tr {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  padding: 0 1em;
+  width: 100%;
+  -ms-grid-columns: 2rem 5rem 15rem 3rem 3rem 3rem;
+      grid-template-columns: 2rem 5rem 15rem 3rem 3rem 3rem;
+}
+
+.userTable tr:hover {
+  background: #e5f6ff;
+}
+
+.userTable tr:hover .actionBtn {
+  visibility: visible;
+}
+
+.userTable tr.selected {
+  background: #e5f6ff;
+}
+
+.userTable tr.selected .actionBtn {
+  visibility: visible;
+}
+
+.userTable tr:first-of-type:hover {
+  background: #f3faff;
+}
+
+.userTable tr .actionBtn {
+  visibility: hidden;
+}
+
+.userTable .phoneIcon {
+  margin-left: 1.25em;
+}
+
+.toolbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.addBtn {
+  background: none;
+  border: none;
+}
+
+.userTypeGroupWrapper {
+  clear: both;
+  display: inline-block;
+  max-width: calc(100vw - 1rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.5em 0;
+}
+
+.userType {
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: -9999em;
+  top: -9999em;
+}
+
+.userType + label {
+  /* float: left; */
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border: 1px solid #dedede;
+  margin-right: -1px;
+  color: #222;
+  background-color: #fff;
+}
+
+.userType + label:first-of-type {
+  border-radius: 0.4em 0 0 0.4em;
+}
+
+.userType + label:last-of-type {
+  border-radius: 0 0.4em 0.4em 0;
+}
+
+.userType:checked + label {
+  background-color: #efefef;
+}
+/*# sourceMappingURL=AdminList.module.css.map */

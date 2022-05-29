@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EACV,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,qBAAqB,EAAE,UAAU;EACjC,GAAG,EAAE,GAAG;CACT",
+    "sources": [
+        "../scss/AirportBookingForm.module.scss"
+    ],
+    "names": [],
+    "file": "AirportBookingForm.module.css"
+}

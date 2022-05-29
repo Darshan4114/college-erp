@@ -1,0 +1,78 @@
+.vehicle {
+  margin: 0.25em;
+  border: 1px solid #dedede;
+  color: #333;
+  border-radius: 0.25em;
+  max-width: calc(100vw - 1rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.vehicle .imgContainer {
+  position: relative;
+  width: 8rem;
+  border-right: 1px solid #efefef;
+}
+
+.vehicle .textContainer {
+  padding: 1em;
+}
+
+.vehicle .textContainer .makeModel {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.25em;
+}
+
+.vehicle .textContainer .stats {
+  font-size: 0.9rem;
+}
+
+.vehicle .textContainer .stats > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 0.25em;
+}
+
+.vehicle .textContainer .stats > div p {
+  margin-left: 0.25em;
+}
+
+.vehicle .textContainer .stats .rate {
+  position: relative;
+  margin: 0 0 1.2em;
+}
+
+.vehicle .textContainer .stats .rate .packageAmount span {
+  color: #777;
+  font-size: 0.8rem;
+}
+
+.vehicle .textContainer .stats .rate .kmRate {
+  position: absolute;
+  bottom: -0.8rem;
+  left: 1.8em;
+  width: 100%;
+  color: #777;
+  font-size: 0.8rem;
+}
+
+.vehicle .textContainer .edit {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+}
+
+.vehicle .textContainer .secondary {
+  color: #777;
+  font-size: 0.8rem;
+}
+/*# sourceMappingURL=CustomerSideVehicle.module.css.map */

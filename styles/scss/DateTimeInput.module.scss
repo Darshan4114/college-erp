@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 10rem 7rem;
+  gap: 1em;
+  &.full {
+    grid-template-columns: 17rem 7rem;
+  }
+}
+.time {
+  height: 3.9rem !important;
+}

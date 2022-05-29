@@ -1,0 +1,13 @@
+.iconBtn {
+  background: none;
+  border: none;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+
+.iconBtn :disabled {
+  pointer-events: none;
+  background: #ff0000;
+}
+/*# sourceMappingURL=ButtonIcon.module.css.map */

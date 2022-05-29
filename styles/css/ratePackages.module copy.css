@@ -1,0 +1,29 @@
+.packageTable {
+  width: calc(100vw - 1rem);
+  margin: 7rem auto 0;
+  max-width: 28rem;
+}
+
+.packageTable th,
+.packageTable td {
+  border: 1px solid #dedede;
+}
+
+.packageTable th input,
+.packageTable td input {
+  width: 100%;
+  border: none;
+  font-size: 1.1rem;
+  padding: 0.2em;
+}
+
+.packageTable th {
+  word-wrap: break-word;
+}
+
+.packageTable .amount,
+.packageTable .ratePerKm,
+.packageTable .ratePerHour {
+  width: 2.5rem;
+}
+/*# sourceMappingURL=ratePackages.module copy.css.map */

@@ -1,0 +1,100 @@
+.form {
+  max-width: calc(100vw - 2rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2em auto;
+  padding: 1em;
+}
+
+.subjects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.subjects .subjectName {
+  margin: 0 1em;
+  width: 5rem;
+}
+
+.subjects .subject {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.actionBtnGrp {
+  width: 20rem;
+  background: var(--theme-white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  margin: 1em 0 0.5em;
+  width: 28rem;
+  border-radius: 0 0 0.5em 0.5em;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  -webkit-clip-path: inset(-15px 0px 0px 0px);
+          clip-path: inset(-15px 0px 0px 0px);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  background: white;
+}
+
+.actionBtnGrp > button {
+  padding: 0.5em 0;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+
+.actionBtnGrp .submit {
+  background: var(--theme-primary);
+  color: var(--theme-white);
+  margin-right: 0.25em;
+}
+
+.actionBtnGrp .submit:disabled {
+  background: #aaa;
+  cursor: auto;
+}
+
+.actionBtnGrp .cancel {
+  margin-left: 0.25em;
+  background: var(--theme-white);
+  color: var(--text-primary);
+  border: 2px solid var(--theme-primary);
+}
+
+.actionBtnGrp.reverseFlex {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.deleteBtn {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+/*# sourceMappingURL=SubjectForm.module.css.map */

@@ -1,0 +1,27 @@
+.displayName {
+  font-weight: bold;
+}
+
+.displayName .firstBookingBool {
+  font-size: 0.8rem;
+  color: #5ad341;
+}
+
+.displayName .firstBookingBool.firstBooking {
+  color: #f3ff06;
+}
+
+.displayName .bookingType {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #777;
+}
+
+.iconBtn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  height: 30px;
+  width: 30px;
+}
+/*# sourceMappingURL=Booking.module.css.map */

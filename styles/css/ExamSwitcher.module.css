@@ -1,0 +1,51 @@
+.container {
+  margin: 0.5em;
+}
+
+.wrapper {
+  clear: both;
+  display: inline-block;
+  width: 15rem;
+  max-width: calc(100vw - 1rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.5em 0;
+}
+
+.radio {
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: -9999em;
+  top: -9999em;
+}
+
+.radio + label {
+  /* float: left; */
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border: 1px solid #dedede;
+  margin-right: -1px;
+  color: #222;
+  background-color: #fff;
+}
+
+.radio + label:first-of-type {
+  border-radius: 0.4em 0 0 0.4em;
+}
+
+.radio + label:last-of-type {
+  border-radius: 0 0.4em 0.4em 0;
+}
+
+.radio:checked + label {
+  background-color: #00a6ff;
+  color: white;
+  font-weight: 500;
+}
+/*# sourceMappingURL=ExamSwitcher.module.css.map */

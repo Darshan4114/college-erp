@@ -1,0 +1,121 @@
+.modalContainer {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 100;
+  overflow: scroll;
+}
+
+.modalContainer .modal {
+  max-width: calc(100vw - 2rem);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.modalContainer .formClass {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: var(--theme-white);
+  border-radius: 0.5em;
+  margin: 4em auto;
+  z-index: 50;
+  width: 22rem;
+  max-width: calc(100vw - 2rem);
+  max-width: 100%;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.modalContainer .formClass h1 {
+  font-size: 1.5rem;
+}
+
+.modalContainer .formClass .error {
+  color: var(--red-matte);
+  font-size: 0.9rem;
+}
+
+.modalContainer .formClass.col2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  width: 40rem;
+}
+
+.actionBtnGrp {
+  background: var(--theme-white);
+  margin-top: 1em;
+  width: 100%;
+  float: right;
+  border-radius: 0 0 0.5em 0.5em;
+  -webkit-clip-path: inset(-15px 0px 0px 0px);
+          clip-path: inset(-15px 0px 0px 0px);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.actionBtnGrp > button {
+  padding: 0.5em 0;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 0.25em;
+  cursor: pointer;
+  width: 9rem;
+}
+
+.actionBtnGrp .submit {
+  background: var(--theme-primary);
+  color: var(--theme-white);
+}
+
+.actionBtnGrp .cancel {
+  background: var(--theme-white);
+  color: var(--text-primary);
+  border: 2px solid var(--theme-primary);
+}
+
+.actionBtnGrp.reverseFlex .cancel {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.addCustomerBtn {
+  color: #333;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  height: 2.2rem;
+  width: 100%;
+  cursor: pointer;
+  border-bottom: 1px solid #dedede;
+  background: var(--theme-secondary);
+  color: #fff;
+}
+
+.selectOption {
+  cursor: pointer;
+}
+
+.selectOption:hover {
+  background: #ddd;
+}
+/*# sourceMappingURL=Forms.module.css.map */

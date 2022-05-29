@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACf,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,qBAAqB,EAAE,UAAU;EACjC,GAAG,EAAE,GAAG;CACT;;AACD,AAAA,OAAO,CAAC;EACN,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,QAAQ;CACjB",
+    "sources": [
+        "../scss/IntercityBookingForm.module.scss"
+    ],
+    "names": [],
+    "file": "IntercityBookingForm.module.css"
+}

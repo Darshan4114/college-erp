@@ -1,0 +1,122 @@
+.navContainer {
+  position: fixed;
+  z-index: 5;
+  padding: 0.5em;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.navContainer button {
+  border: none;
+  background: none;
+}
+
+.navContainer a div {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.logo {
+  position: relative;
+  height: 6.5rem;
+  margin: 1em;
+}
+
+.menuContainer {
+  -webkit-filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.24));
+          filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.24));
+  position: fixed;
+  width: 100%;
+  bottom: -22rem;
+  left: 0;
+  margin: 0 auto;
+  padding: 1em auto 1em;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  height: 25rem;
+  color: var(--primary-text-color);
+  font-size: 1.25rem;
+  background: #fff;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-clip-path: ellipse(80% 85% at 50% 100%);
+          clip-path: ellipse(80% 85% at 50% 100%);
+  list-style: none;
+}
+
+.menu.open {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.menu li {
+  margin-bottom: 1.5em;
+}
+
+.profile {
+  position: absolute;
+  left: 0.4em;
+  bottom: 3.5em;
+}
+
+.profile .imgContainer {
+  width: 3.25rem;
+  height: 3.25rem;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.desg {
+  position: absolute;
+  bottom: 8.4em;
+  width: 3.5rem;
+  margin: 0 auto;
+  left: 0.4em;
+  font-size: 0.8rem;
+  margin: 0.7em 0;
+}
+
+.pill {
+  text-align: center;
+  padding: 0.1em 0.5em;
+  background: #777;
+  color: #fff;
+  border-radius: 1em;
+}
+
+@media screen and (min-width: 750px) {
+  .profile {
+    bottom: 0.4em;
+  }
+  .desg {
+    bottom: 4.4em;
+  }
+}
+/*# sourceMappingURL=Nav.module.css.map */

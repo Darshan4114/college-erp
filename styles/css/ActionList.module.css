@@ -1,0 +1,39 @@
+.actions .actionBtnGrp {
+  margin-left: 1em;
+}
+
+.actionBtn {
+  border: none;
+  background: none;
+  color: #777;
+  padding: 0.2em 0.5em;
+  cursor: pointer;
+  border-radius: 0.25em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.actionBtn:hover {
+  text-decoration: underline;
+}
+
+.hr {
+  width: calc(100% - 2rem);
+  margin: 1em;
+  border: 0;
+  height: 1px;
+  background: darkgray;
+}
+
+.sectionHeader {
+  color: #777;
+  text-transform: uppercase;
+  border-left: 2px solid var(--theme-primary);
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0 0 0 0.25em;
+  margin: 1em 0.5em 0.5em 1em;
+}
+/*# sourceMappingURL=ActionList.module.css.map */

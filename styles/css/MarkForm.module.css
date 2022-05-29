@@ -1,0 +1,180 @@
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  background: #fff;
+  padding: 1em;
+  border-radius: 1em;
+  width: 35rem;
+  max-width: calc(100vw - 2em);
+  max-height: calc(100vh - 2em);
+}
+
+.form h2 {
+  margin: 0 0 0.5em;
+}
+
+.examData {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+
+.group {
+  position: relative;
+  margin: 0.25em;
+  padding: 0.9em 0 0;
+}
+
+.group .label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.markSection {
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  margin: 1em auto 0;
+  padding: 0.5em;
+}
+
+.tableContainer {
+  overflow: auto;
+  margin: 0 auto;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+.tableContainer ::-webkit-scrollbar {
+  width: 100px;
+}
+
+.tableContainer ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.tableContainer ::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.tableContainer ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.markTable {
+  white-space: nowrap;
+}
+
+.markTable tr {
+  line-height: 0;
+}
+
+.markTable th {
+  border-bottom: 0.5px solid #ccc;
+  margin-right: -3px;
+  min-width: 150px;
+  margin: 0;
+  color: var(--theme-primary);
+}
+
+.markTable td:first-child {
+  padding: 0 0.25em;
+}
+
+.markTable th {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  background: white;
+  top: 0;
+  padding: 0.35em;
+}
+
+.markTable td:first-child,
+.markTable th:first-child {
+  background: white;
+  z-index: 2;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  border-right: 0.5px solid #ccc;
+}
+
+.markTable td:last-child,
+.markTable th:last-child {
+  background: white;
+  z-index: 2;
+  position: -webkit-sticky;
+  position: sticky;
+  right: 0;
+  border-left: 0.5px solid #ccc;
+  padding: 0 0.25em;
+}
+
+.markTable td input {
+  height: 1.7rem;
+  font-size: 1.2rem;
+  text-align: right;
+  padding: 0 0.25em;
+  width: 100%;
+  border: 0.5px solid #ccc;
+}
+
+.subject .disabledInput {
+  text-align: center;
+}
+
+.unsaved input {
+  background: #ffffa8;
+}
+
+.actionBtnGrp {
+  background: var(--theme-white);
+  margin-top: 1em;
+  width: 100%;
+  border-radius: 0 0 0.5em 0.5em;
+  -webkit-clip-path: inset(-15px 0px 0px 0px);
+          clip-path: inset(-15px 0px 0px 0px);
+  display: -ms-grid;
+  display: grid;
+  gap: 0.7em;
+  float: right;
+  -ms-grid-columns: (7rem)[2];
+      grid-template-columns: repeat(2, 7rem);
+  direction: rtl;
+}
+
+.actionBtnGrp > button {
+  padding: 0.5em 0;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 0.25em;
+  cursor: pointer;
+  width: 7rem;
+}
+
+.actionBtnGrp .submit {
+  background: var(--theme-primary);
+  color: var(--theme-white);
+}
+
+.actionBtnGrp .cancel {
+  background: var(--theme-white);
+  color: var(--text-primary);
+  border: 2px solid var(--theme-primary);
+}
+
+.actionBtnGrp.reverseFlex .cancel {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+/*# sourceMappingURL=MarkForm.module.css.map */

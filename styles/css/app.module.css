@@ -1,0 +1,10 @@
+.navAndComponentContainer {
+  position: relative;
+}
+
+@media screen and (min-width: 750px) {
+  .navAndComponentContainer {
+    padding: 0 0 0 4em;
+  }
+}
+/*# sourceMappingURL=app.module.css.map */

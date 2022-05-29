@@ -1,0 +1,62 @@
+.courseData {
+  display: -ms-grid;
+  display: grid;
+  padding: 1em;
+  width: 100%;
+}
+
+.group {
+  position: relative;
+  margin: 0.5em;
+  padding: 0.9em 0 0;
+  width: 10rem;
+}
+
+.group .label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.subjects {
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 1em;
+}
+
+.subjects .subject {
+  display: -ms-grid;
+  display: grid;
+  gap: 0.7em;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.timeTableHeading {
+  display: -ms-grid;
+  display: grid;
+  gap: 0.7em;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  padding: 0 0 0.5em;
+  margin: 0 0 0.5em;
+  border-bottom: 1px solid #ddd;
+}
+
+.editBtn {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+.deleteBtn {
+  position: absolute;
+  top: 3.5em;
+  right: 1em;
+}
+/*# sourceMappingURL=CourseDetail.module.css.map */

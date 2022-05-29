@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACf,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,gBAAgB;CAKxC;;AAPD,AAIE,gBAJc,CAId,MAAM,CAAC;EACL,WAAW,EAAE,YAAY;CAC1B",
+    "sources": [
+        "../scss/CityBookingForm.module.scss"
+    ],
+    "names": [],
+    "file": "CityBookingForm.module.css"
+}

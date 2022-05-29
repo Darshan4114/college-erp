@@ -1,0 +1,75 @@
+.formClass {
+  display: flex;
+  flex-direction: column;
+  padding: 0.7em;
+  margin-top: -1.8em;
+  .formContainer {
+    background: var(--theme-white);
+    margin: 1em;
+    max-width: 21rem;
+    padding: 1em;
+    &.otpForm {
+      max-width: 30rem;
+    }
+  }
+  .otpContainer {
+    width: 21.2rem;
+    max-width: calc(100vw - 2em);
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+    > div {
+      width: 2rem;
+    }
+  }
+  .otpLabel {
+    margin: 0.7em 0em -0.9em;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+  }
+  .otpInput {
+    width: 2.7rem !important;
+    height: 3rem;
+    flex: 1;
+    margin-right: 0.5em;
+    font-size: 2rem;
+    border-radius: 0.15em;
+    border: 1px solid #777;
+  }
+  .actionBtnGrp {
+    background: var(--theme-white);
+    // position: fixed;
+    // bottom: 0;
+    // left: 0;
+    // padding: 1em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    z-index: 40;
+    border-radius: 0 0 0.5em 0.5em;
+    margin-top: 0.5em;
+    // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    // clip-path: inset(-15px 0px 0px 0px);
+    > button {
+      p {
+        padding: 0.35em 0;
+      }
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 0.25em;
+      cursor: pointer;
+      flex: 1;
+    }
+    .submit {
+      background: var(--theme-primary);
+      color: var(--theme-white);
+      margin-left: 0.25em;
+    }
+    .cancel {
+      background: var(--theme-white);
+      margin-right: 0.25em;
+      color: var(--text-primary);
+      border: 2px solid var(--theme-primary);
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.newspaperInput {
+  margin: 0.7em 0 0;
+  width: 100%;
+  position: relative;
+  .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0.8rem;
+    color: #777;
+  }
+}

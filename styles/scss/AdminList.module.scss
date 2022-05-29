@@ -1,0 +1,98 @@
+.container {
+  position: relative;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(2, 1fr);
+}
+.userList {
+  background: rgb(204, 226, 240);
+}
+.userTable {
+  width: 100%;
+
+  th {
+    text-align: left;
+    border-bottom: 1px solid #777;
+    padding: 0 0 0.5em;
+    margin: 0 0 0.5em;
+  }
+  tr {
+    align-items: center;
+    display: grid;
+    padding: 0 1em;
+    width: 100%;
+    grid-template-columns: 2rem 5rem 15rem 3rem 3rem 3rem;
+    &:hover {
+      background: #e5f6ff;
+      .actionBtn {
+        visibility: visible;
+      }
+    }
+
+    &.selected {
+      background: #e5f6ff;
+      .actionBtn {
+        visibility: visible;
+      }
+    }
+    &:first-of-type:hover {
+      background: rgb(243, 250, 255);
+    }
+    .actionBtn {
+      visibility: hidden;
+    }
+  }
+
+  .phoneIcon {
+    margin-left: 1.25em;
+  }
+}
+
+.toolbar {
+  display: flex;
+  padding: 1em;
+  justify-content: space-between;
+  align-items: center;
+}
+.addBtn {
+  background: none;
+  border: none;
+}
+.userTypeGroupWrapper {
+  clear: both;
+  display: inline-block;
+  max-width: calc(100vw - 1rem);
+  display: flex;
+  margin: 0.5em 0;
+}
+
+.userType {
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: -9999em;
+  top: -9999em;
+  & + label {
+    /* float: left; */
+    text-align: center;
+    flex: 1;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border: 1px solid #dedede;
+    margin-right: -1px;
+    color: #222;
+    background-color: #fff;
+
+    &:first-of-type {
+      border-radius: 0.4em 0 0 0.4em;
+    }
+
+    &:last-of-type {
+      border-radius: 0 0.4em 0.4em 0;
+    }
+  }
+
+  &:checked + label {
+    background-color: #efefef;
+  }
+}

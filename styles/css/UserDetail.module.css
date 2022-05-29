@@ -1,0 +1,117 @@
+.container {
+  padding: 1em;
+}
+
+.container hr {
+  margin: 1em 0;
+  border-color: #ddd;
+  border: 0.5px solid #ddd;
+}
+
+.userData {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.group {
+  position: relative;
+  margin: 0.25em;
+  padding: 0.9em 0 0;
+  width: 10rem;
+}
+
+.group .label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.9rem;
+  color: var(--theme-primary);
+}
+
+.subjects {
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 1em;
+}
+
+.subjects .subject {
+  display: -ms-grid;
+  display: grid;
+  gap: 0.7em;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.accessLevelWrapper {
+  clear: both;
+  display: inline-block;
+  max-width: calc(100vw - 1rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.5em 0;
+}
+
+.accessLevel {
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: -9999em;
+  top: -9999em;
+}
+
+.accessLevel + label {
+  /* float: left; */
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border: 1px solid #dedede;
+  margin-right: -1px;
+  color: #222;
+  background-color: #fff;
+}
+
+.accessLevel + label:first-of-type {
+  border-radius: 0.4em 0 0 0.4em;
+}
+
+.accessLevel + label:last-of-type {
+  border-radius: 0 0.4em 0.4em 0;
+}
+
+.accessLevel:checked + label {
+  background-color: #efefef;
+}
+
+.timeTableHeading {
+  display: -ms-grid;
+  display: grid;
+  gap: 0.7em;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  padding: 0 0 0.5em;
+  margin: 0 0 0.5em;
+  border-bottom: 1px solid #ddd;
+}
+
+.editBtn {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+.deleteBtn {
+  position: absolute;
+  top: 3.5em;
+  right: 1em;
+}
+/*# sourceMappingURL=UserDetail.module.css.map */

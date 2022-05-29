@@ -1,0 +1,99 @@
+.formClass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.7em;
+  margin-top: -1.8em;
+}
+
+.formClass .formContainer {
+  background: var(--theme-white);
+  margin: 1em;
+  max-width: 21rem;
+  padding: 1em;
+}
+
+.formClass .formContainer.otpForm {
+  max-width: 30rem;
+}
+
+.formClass .otpContainer {
+  width: 21.2rem;
+  max-width: calc(100vw - 2em);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1em 0;
+}
+
+.formClass .otpContainer > div {
+  width: 2rem;
+}
+
+.formClass .otpLabel {
+  margin: 0.7em 0em -0.9em;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.formClass .otpInput {
+  width: 2.7rem !important;
+  height: 3rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 0.5em;
+  font-size: 2rem;
+  border-radius: 0.15em;
+  border: 1px solid #777;
+}
+
+.formClass .actionBtnGrp {
+  background: var(--theme-white);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  z-index: 40;
+  border-radius: 0 0 0.5em 0.5em;
+  margin-top: 0.5em;
+}
+
+.formClass .actionBtnGrp > button {
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 0.25em;
+  cursor: pointer;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.formClass .actionBtnGrp > button p {
+  padding: 0.35em 0;
+}
+
+.formClass .actionBtnGrp .submit {
+  background: var(--theme-primary);
+  color: var(--theme-white);
+  margin-left: 0.25em;
+}
+
+.formClass .actionBtnGrp .cancel {
+  background: var(--theme-white);
+  margin-right: 0.25em;
+  color: var(--text-primary);
+  border: 2px solid var(--theme-primary);
+}
+/*# sourceMappingURL=TripForm.module.css.map */

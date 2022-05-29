@@ -1,0 +1,142 @@
+.container {
+  position: relative;
+  padding: 1em;
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  overflow-x: hidden;
+  border-radius: 1em;
+  height: 100%;
+  h2 {
+    margin-bottom: 1.5rem;
+    color: #444;
+  }
+  h3 {
+    margin-bottom: 1rem;
+    color: #444;
+  }
+  hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 0.5em 0;
+    width: 100%;
+  }
+}
+.accordion {
+  border: none;
+  box-shadow: none;
+}
+
+.location {
+  cursor: pointer;
+  .name {
+    font-size: 1.1rem;
+  }
+  padding: 0.7em;
+  border-radius: 0.25em;
+  &:hover {
+    background: #efefef;
+  }
+}
+.hr {
+  border-bottom: 1px solid #efefef;
+  height: 0;
+}
+.tableHeading {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0.7em 0 0;
+}
+.group {
+  position: relative;
+  margin: 0.25em;
+  padding: 0.9em 0 0;
+  width: 10rem;
+
+  .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0.9rem;
+    color: #777;
+  }
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.restrictionList {
+  display: grid;
+  grid-template-columns: 1rem 12rem 10rem 3rem 3rem;
+}
+.mapBtn {
+  top: 1em;
+  right: 1em;
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 1.5rem;
+}
+.addBtn {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  cursor: pointer;
+}
+.sectionHeading {
+  font-size: 14;
+  font-weight: bold;
+}
+.bookingTypeName {
+  font-size: 1.1rem;
+}
+.packageTable {
+  width: 30rem;
+
+  max-width: calc(100vw - 1rem);
+
+  td {
+    border: 1px solid #dedede;
+    input {
+      width: 100%;
+      border: none;
+      font-size: 1.1rem;
+      padding: 0.2em;
+    }
+  }
+
+  th {
+    word-wrap: break-word;
+    font-size: 0.9rem;
+    color: #777;
+    font-weight: normal;
+  }
+
+  .amount {
+    width: 5rem;
+  }
+  .ratePerKm,
+  .ratePerHour {
+    width: 5rem;
+  }
+  .groupHeading {
+    // text-align: center;
+    background: var(--theme-primary);
+    color: white;
+    font-weight: 700;
+  }
+  .tripType {
+    padding: 0.2em;
+    text-transform: capitalize;
+  }
+  .vehicleType {
+    border: none;
+    width: 7rem;
+    // text-align: center;
+    text-transform: capitalize;
+  }
+}
